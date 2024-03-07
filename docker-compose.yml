@@ -1,0 +1,12 @@
+version: '2.4'
+
+services: 
+  app: 
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: next13-todo-list
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
